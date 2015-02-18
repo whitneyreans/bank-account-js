@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <title>beervana bank. Or whatever.</title>
+</head>
+<body>
+  <div class='container'>
+    <h2>hi. give us your money.</h2>
+
+    <form id="new-account">
+
+      <div class="form-group">
+        <label type="text" for="name">Your Name</label>
+        <input type="text" id="name" class="form-control">
+
+        <label type="text" for="initial-deposit">Initial deposit</label>
+        <input type="text" id="initial-deposit" class="form-control">
+      </div>
+
+      <button type="submit" class="btn btn-primary">$ pls</button>
+    </form>
+
+    <form id="deposit-withdraw">
+
+      <div class="form-group">
+        <label type="text" for="deposit-amount">Deposit Amount</label>
+        <input type="text" id="deposit-amount" class="form-control">
+
+        <label type="text" for="withdraw-amount">Withdraw Amount</label>
+        <input type="text" id="withdraw-amount" class="form-control">
+      </div>
+
+      <button type="submit" class="btn btn-primary">whatever.</button>
+    </form>
+
+
+    <div id="show-balance">
+      <h3><span class="account-name"></span>'s bank account balance:</h3>
+      <h5>$<span class="balance"></span></h5>
+    </div>
+  </div>
+
+</body>
+</html>
