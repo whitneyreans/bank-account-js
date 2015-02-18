@@ -1,3 +1,11 @@
 #show-balance {
   display: none;
 }
+
+body {
+  background-image: url("http://1.bp.blogspot.com/-7pazDNyi8KA/UsdAxwBG6LI/AAAAAAAAJ3w/3bF8Bq8GauU/s1600/IMG_3900.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+}

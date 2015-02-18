@@ -36,16 +36,28 @@ $(document).ready(function() {
     var inputtedDeposit = parseFloat($("input#deposit-amount").val());
     var inputtedWithdraw = parseFloat($("input#withdraw-amount").val());
 
-    if (("#deposit-amount" !== NaN) && ("#withdraw-amount" !== NaN)) {
+    if (!(isNaN(inputtedDeposit))) {
       newBankAccount.deposit(inputtedDeposit);
-      newBankAccount.withdraw(inputtedWithdraw);
-    } else if ("#deposit-amount" === NaN) {
-        inputtedDeposit.val() = 0;
-        newBankAccount.withdraw(inputtedWithdraw);
-    } else if ("#withdraw-amount" === NaN) {
-        inputtedWithdraw.val() = 0;
-        newBankAccount.deposit(inputtedDeposit);
     }
+
+    if (!(isNaN(inputtedWithdraw))) {
+      newBankAccount.withdraw(inputtedWithdraw);
+    }
+    // 
+    // newBankAccount.deposit(inputtedDeposit);
+    // newBankAccount.withdraw(inputtedWithdraw);
+
+
+    // if (("#deposit-amount" !== NaN) && ("#withdraw-amount" !== NaN)) {
+    //   newBankAccount.deposit(inputtedDeposit);
+    //   newBankAccount.withdraw(inputtedWithdraw);
+    // } else if ("#deposit-amount" === NaN) {
+    //     inputtedDeposit.val() = 0;
+    //     newBankAccount.withdraw(inputtedWithdraw);
+    // } else if ("#withdraw-amount" === NaN) {
+    //     inputtedWithdraw.val() = 0;
+    //     newBankAccount.deposit(inputtedDeposit)
+    // }
 
     $(".balance").text(newBankAccount.balance);
 
