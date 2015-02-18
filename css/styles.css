@@ -9,3 +9,83 @@ body {
   background-size: cover;
   -moz-background-size: cover;
 }
+
+.header {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+.top {
+  font-family: 'Poiret One', cursive;
+  font-size: 12px;
+
+  marin-top: 0px;
+}
+
+.container {
+  background-color: rgba(250, 249, 222, 0.5);
+  border-radius: 10px;
+  width: 40%;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  font-family: 'Signika', sans-serif;
+  text-align: center;
+
+}
+
+.content-header {
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+label {
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+
+}
+
+.form-group {
+  text-align: center;
+}
+
+#name {
+  border: 1px dashed;
+}
+#initial-deposit {
+  border: 1px dashed;
+}
+#deposit-amount {
+  border: 1px dashed;
+}
+#withdraw-amount {
+  border: 1px dashed;
+}
+
+.btn {
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 12px;
+  background-color: #a6d9e3;
+  border: none;
+  margin-top: 8px;
+
+}
+
+.btn:hover {
+  background: #fdffba;
+  text-decoration: none;
+}
+
+.deposit-text {
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+}
